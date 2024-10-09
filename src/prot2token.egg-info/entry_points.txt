@@ -1,0 +1,2 @@
+[console_scripts]
+prot2token = run:test

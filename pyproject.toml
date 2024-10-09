@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prot2token"
+version = "0.1.0"
+description = "A Python package for protein language modeling using Huggingface ecosystem."
+authors = [
+    { name = "Ebrahim", email = "ebimsv0501@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+
+# Define entry points for CLI (optional, if you want to run run.py as a command)
+[project.scripts]
+prot2token = "run:test"
+
+
+# Optional development dependencies
+[project.optional-dependencies]
+dev = ["pytest", "black", "flake8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Custom build step to inject dependencies
+[tool.pyproject-build]
+custom-build-step = "python helper_script.py"

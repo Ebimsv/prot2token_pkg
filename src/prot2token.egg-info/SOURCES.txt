@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/prot2token/ __init__.py
+src/prot2token/models.py
+src/prot2token/run.py
+src/prot2token/utils.py
+src/prot2token.egg-info/PKG-INFO
+src/prot2token.egg-info/SOURCES.txt
+src/prot2token.egg-info/dependency_links.txt
+src/prot2token.egg-info/entry_points.txt
+src/prot2token.egg-info/requires.txt
+src/prot2token.egg-info/top_level.txt
+tests/test_prot2token.py
